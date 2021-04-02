@@ -8,7 +8,7 @@ body {
 header {
     height:450px;
     width:100%;
-    margin-top: 0;    
+    margin-top: 0;
     background-color: transparent;
     background: no-repeat center/100% url("./../images/header-back.png");
     text-align: center;
@@ -22,8 +22,9 @@ header {
     margin:0 auto;
 }
 
-h1 {
+.header-content h1 {
     padding-top: 8%;
+    margin-top: 0;
 }
 
 .link-buttom{
@@ -138,7 +139,7 @@ footer {
     /* display:block; */
     margin:0 auto;
     box-sizing: border-box; 
-    padding: 40px;
+    padding: 30px;
     background-color: black;
     color: white;
     width:100%;
