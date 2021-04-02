@@ -8,58 +8,75 @@ body {
 header {
     height:450px;
     width:100%;
+    margin-top: 0;    
     background-color: transparent;
     background: no-repeat center/100% url("./../images/header-back.png");
     text-align: center;
     color: white;
 }
 
-h1 {
-    color:white;
-    padding-top: 8%;
+
+.header-content {
+    width:70%;    
     text-align: center;
+    margin:0 auto;
 }
 
-.white-text {
+h1 {
+    padding-top: 8%;
+}
+
+.link-buttom{
+    display: inline-block;
+    margin: 20px 0;
+    padding: 20px 40px;
+    border: #666 solid 1px;
+    background-color:#333;
     color: white;
+    text-decoration: none;
+    font-size: medium;
 }
 
-.div-grey {
+/* header a:hover {
+    color: black; 
+    background: whitesmoke; 
+   } */
+
+.grey-container {
     background-color: #333;
     width: 100%;
     height: 600px;
     text-align: center;
 }
 
-.link-buttom {
-    display: inline-block;
-    padding: 1em;
-    border: #666 solid 1px;
-    background-color:#333;
-    color: white;
-    text-decoration: none;
-    font-size: medium;
-
+.content {
+    width:100%;
+    /* height: 250px; */
+    margin-bottom: 40px;
 }
 
 .columns-content {
     width:80%;
+    /* height:80%ж */
+    /* auto for centering content */
     margin:0 auto;
-    padding: 20px 0;
+    padding: 0;
     column-count: 2;
     column-rule-style: none;
-    text-align: center;
-    
+    text-align: center;    
+    vertical-align: top;
 }
+
 .columns-h2 {
-    padding-top: 2%;
-    text-align: center;
-    
+    padding-top: 2%; 
+    text-align: center;    
 }
 
 .centered-content {
+    width:70%;
+    margin:0 auto;
     text-align: center;
-    padding: 20px 20%;
+    padding: 10px 0 30px 0;
 
 }
 
@@ -68,7 +85,7 @@ h1 {
     height:90%;
     display:inline-block;
     box-sizing: border-box;
-    margin:10px;
+    margin:30px 10px;
     background:whitesmoke;
     color: black;
     text-align: center;
@@ -87,10 +104,19 @@ h1 {
     padding: 5%;
 }
 
-.div-contact, .div-about {
+.container {
+    width:100%;
+    height: 340px;
+}
+
+.container h2 {
+    padding: 15px 0;
+}
+
+.contact, .about {
     width:50%;
-    overflow:hidden;
-    height: 300px;
+    /* overflow:hidden; */
+    height: 100%;
     display:inline-block;
     box-sizing: border-box; 
     margin: 0;
@@ -99,21 +125,32 @@ h1 {
     text-align: center;
 }
 
-.div-contact {
+.contact {
     background-color: #2690d4;
 }
 
-.div-about {
+.about {
     background-color: #333;
     float:right;
 }
 
-
 footer {
-    margin:0;
+    /* display:block; */
+    margin:0 auto;
+    box-sizing: border-box; 
+    padding: 40px;
     background-color: black;
     color: white;
     width:100%;
     height:100px;
     text-align: center;
+}
+
+.footer-left {
+    width:50%;
+    float:left;
+}
+.footer-right {
+    width:50%;
+    float:right;
 }
